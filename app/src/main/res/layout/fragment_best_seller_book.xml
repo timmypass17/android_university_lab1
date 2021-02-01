@@ -10,24 +10,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_marginBottom="12dp"
         android:orientation="horizontal">
 
         <!-- tools (optional) = placeholder name -->
+
+        <!-- Read through Dimensions -->
+
         <TextView
             android:id="@+id/ranking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="@id/book_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
             android:fontFamily="serif"
             android:textSize="22sp"
-            tools:text="Ranking"/>
+            tools:text="1" />
 
-        <!-- Read through Dimensions -->
         <ImageView
             android:id="@+id/book_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/book_image_height"
+            android:layout_centerInParent="true"
             tools:srcCompat="@tools:sample/avatars" />
 
     </RelativeLayout>
